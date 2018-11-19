@@ -1,3 +1,6 @@
 [submodule "project/Puissance4"]
 	path = project/Puissance4
 	url = https://github.com/Knockturne42/Puissance4.git
+[submodule "Puissance4"]
+	path = Puissance4
+	url = https://github.com/Knockturne42/Puissance4
