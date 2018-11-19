@@ -1,6 +1,7 @@
 * {
 	padding: 0;
 	margin: 0;
+	font-family: 'Roboto', sans-serif;
 }
 
 html {
@@ -92,20 +93,20 @@ footer ul li img {
 	background-color: red;
 	display: flex;
 	flex-direction: column;
-	align-items: c
+	text-align: center;
+	font-size: 3em;
 }
 
 #slide {
 	width: 100%;
 	height: 10%;
 	display: flex;
-	position: relative;
 }
 
 #slide img {
 	width: 100%;
 	height: auto;
 	position: absolute;
-	transition-duration: 2s;
+	transition-duration: 1s;
 	left: 0;
 }
