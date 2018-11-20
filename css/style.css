@@ -18,9 +18,9 @@ body {
 
 header {
 	width: 100%;
-	height: 100%;
+	height: 50%;
 	background-image: url(../img/header.jpg);
-	-webkit-background-size: 100%;
+	-webkit-background-size: 350%;
 	background-size: 350%;
 	background-repeat: no-repeat;
 	background-position: 50%;
@@ -60,6 +60,7 @@ nav a:active {
 main {
 	width: 100%;
 	height: 70%;
+	/*display: flex;*/
 }
 
 footer {
@@ -89,18 +90,39 @@ footer ul li img {
 
 #projects {
 	width: 100%;
-	height: 100%;
-	background-color: red;
-	display: flex;
-	flex-direction: column;
+	height: 50%;
+	background-color: blue;
 	text-align: center;
 	font-size: 3em;
 }
 
+#projects h2 {
+	height: 10%;
+}
+
+#slide button {
+	width: 50px;
+	height: 50px;
+	border-radius: 100%;
+	position: relative;
+	z-index: 2;
+}
+
+#buttonLeft{
+	/*left: 0;*/
+}
+
+#buttonRight{
+/*	right: 0;*/
+}
+
 #slide {
 	width: 100%;
-	height: 10%;
+	height: 5%;
 	display: flex;
+	overflow: hidden;
+	justify-content: space-between;
+	align-items: center;
 }
 
 #slide img {
