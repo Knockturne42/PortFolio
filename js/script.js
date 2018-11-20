@@ -86,6 +86,6 @@ function leftSlide(n) {
 	}
 }
 mySlide();
-setInterval(function(){
-	showImg(slideIndex+=1, '+');
-}, 5000);
+// setInterval(function(){
+// 	showImg(slideIndex+=1, '+');
+// }, 5000);
