@@ -20,76 +20,10 @@ function showImg(n, sens) {
 		slideIndex = slide.length;
 	for (i = 0; i < slide.length; i++)
 		slide[i].style.display = "none";
-	// slide[slideIndex - 1].style.display = "block";
-	// slide[slideIndex - 1].style.left = "100%";
-	// if (n === -42)
-	// 	slide[slideIndex - 1].style.left = "0%";
 	if (sens === '+')
 		leftSlide(n);
 	else
 		rightSlide(n);
-	// if (n > slide.length)
-	// {
-	// 	slide[n - 2].style.display = "block";
-	// 	slide[n - 2].style.left = "-100%";
-	// 	setTimeout(function(){
-	// 		// slide[slideIndex - 1].style.left = "0%";
-	// 		slide[slideIndex - 1].style.left = "0%";
-	// 	}, 200);
-	// 	setTimeout(function(){
-	// 		slide[n - 2].style.display = "none";
-	// 		slide[n - 2].style.left = "0";
-	// 	}, 1000);
-	// }
-	// if (slide[slideIndex - 2]) {
-	// 	slide[slideIndex - 2].style.display = "block";
-	// 	slide[slideIndex - 2].style.left = "-100%";
-	// 	setTimeout(function(){
-	// 		// slide[slideIndex - 1].style.left = "0%";
-	// 		slide[slideIndex - 1].style.left = "0%";
-	// 	}, 200);
-	// 	setTimeout(function(){
-	// 		// slide[slideIndex - 1].style.left = "0%";
-	// 		slide[slideIndex - 2].style.display = "none";
-	// 		slide[slideIndex - 2].style.left = "0";
-	// 		slide[slideIndex - 2].style.zIndex = "1";
-	// 	}, 1500);
-	// }
-
-
-
-
-	// if (n === -42)
-	// {
-	// 	slide[slideIndex - 1].style.transitionDuration = "1s";
-	// 	slide[slideIndex - 1].style.left = "0%";
-	// }
-	// if (n > slide.length)
-	// {
-	// 	slide[n - 2].style.display = "block";
-	// 	slide[n - 2].style.left = "-100%";
-	// 	slide[n - 2].style.zIndex = "2";
-	// 	setTimeout(function(){
-	// 		slide[slideIndex - 1].style.transitionDuration = "1s";
-	// 		slide[slideIndex - 1].style.left = "0%";
-	// 		slide[n - 2].style.display = "none";
-	// 		slide[n - 2].style.left = "0";
-	// 		slide[n - 2].style.zIndex = "1";
-	// 	}, 1000);
-	// }
-	// else if(slide[slideIndex - 2])
-	// {
-	// 	slide[slideIndex - 2].style.display = "block";
-	// 	slide[slideIndex - 2].style.left = "-100%";
-	// 	slide[slideIndex - 2].style.zIndex = "2";
-	// 	setTimeout(function(){
-	// 		slide[slideIndex - 1].style.transitionDuration = "1s";
-	// 		slide[slideIndex - 1].style.left = "0%";
-	// 		slide[slideIndex - 2].style.display = "none";
-	// 		slide[slideIndex - 2].style.left = "0";
-	// 		slide[slideIndex - 2].style.zIndex = "1";
-	// 	}, 1000);
-	// }
 }
 
 function rightSlide(n) {
@@ -152,6 +86,6 @@ function leftSlide(n) {
 	}
 }
 mySlide();
-// setInterval(function(){
-// 	showImg(slideIndex+=1, '+');
-// }, 5000);
+setInterval(function(){
+	showImg(slideIndex+=1, '+');
+}, 5000);
