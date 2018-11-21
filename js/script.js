@@ -85,6 +85,20 @@ function leftSlide(n) {
 		}, 1500);
 	}
 }
+
+// function headerEvent() {
+	var header = document.getElementsByTagName('nav');
+
+	header[0].addEventListener("click", function(){
+		setTimeout(function(){header[0].style.display = "none";},1500);
+	});
+
+	document.addEventListener("scroll", function(){
+		header[0].style.display = "flex";
+		//setTimeout(function(){header[0].style.display = "none";}, 5000);
+	});
+// }
+// headerEvent();
 mySlide();
 // setInterval(function(){
 // 	showImg(slideIndex+=1, '+');
