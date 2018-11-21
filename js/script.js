@@ -95,7 +95,7 @@ function leftSlide(n) {
 
 	document.addEventListener("scroll", function(){
 		header[0].style.display = "flex";
-		//setTimeout(function(){header[0].style.display = "none";}, 5000);
+		setTimeout(function(){header[0].style.display = "none";}, 5000);
 	});
 // }
 // headerEvent();

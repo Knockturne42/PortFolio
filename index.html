@@ -44,15 +44,16 @@
 		</div>
 		<div id="contact">
 			<h2>Contact</h2>
-			<form action="" method="POST">
-				<label for="lastname">Nom: </label>
-				<input type="text" name="lastname">
-				<label for="firstname">Prenom: </label>
-				<input type="text" name="firstname">
-				<label for="mail">Email: </label>
-				<input type="text" name="mail">
-				<label for="message">message: </label>
-				<input type="textarea" name="message">
+			<form action="./php/form.php" method="POST">
+<!-- 				<label for="lastname">Nom: </label> -->
+				<input type="text" name="lastname" class="text" placeholder="LastName ...">
+<!-- 				<label for="firstname">Prenom: </label> -->
+				<input type="text" name="firstname" class="text" placeholder="Firstname ...">
+<!-- 				<label for="mail">Email: </label> -->
+				<input type="text" name="mail" class="text" placeholder="Mail ...">
+<!-- 				<label for="message">message: </label> -->
+				<input type="textarea" name="message" class="textArea" placeholder="Tape your text here ...">
+				<input type="submit" id="submit" value="Submit">
 			</form>
 		</div>
 	</main>
